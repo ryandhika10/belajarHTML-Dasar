@@ -1,0 +1,71 @@
+ >> DOWNLOAD CODE EDITOR <<
+
+
+ >> Tahapan download dan install kode editor (Sublime text) : 
+
+    1. Kunjungi web sublimetext.com
+
+    2. Klik tombol download for windows (OS saya windows)
+
+    3. Jika sudah selesai mendownload buka file downloadnya yg
+       ekstensinya .exe
+
+    4. Tinggal klik next-next hingga proses instalasi selesai
+
+ >> Setelah di install, kita buat folder baru terlebih dahulu, buka 
+    aplikasinya
+
+ >> Klo mau buat file baru, klik File lalu New File
+
+ >> Sebelum menuliskan apapun di tab baru, biasakan kita save dlu filenya, 
+    simpan file di dlm folder yg baru kita buat
+
+ >> Jika sudah di save, di kanan bawah akan berubah tulisannya dari Plain 
+    Text, jadi HTML
+
+ >> Ketika di klik, maka akan banyak opsi bahasa pemrograman, berfungsi agar 
+    sublime text mengetahui kita bikin file jenis apa, klo sublime text tahu, 
+    nanti fasilitas dgn bahasa pemrograman yg dipilih akan bisa digunakan
+
+ >> Klo kita ketikkan kembali syntax yg sudah kita lakukan di pembelajaran 
+    sebelumnya, tag akan berubah warna, ini dinamakan syntax highlighting
+
+ >> Klo salah menulis syntax akan terlihat warna dari tulisan tag berubah
+
+ >> Ketika kita mau bikin tutup tag, saat baru mengetikkan "</", maka otomatis 
+    akan ditutup oleh sublime text nya
+
+ >> Sublime text memberi kita kemudahan dlm menulis syntax yg sebelumnya 
+    dilakukan secara manual semua
+
+ >> Kita cukup mengetikkan html, lalu tekan Tab, maka otomatis akan 
+    ditampilkan seluruh syntax standar HTML nya dan kursor sudah berada di dlm 
+    tag title
+
+ >> Begitu juga ketika membuat tag paragraph, tinggal ketik p, lalu tekan Tab, 
+    otomatis dibuatkan tag p dan kursor sudah berada di dlm tag p nya
+
+ >> Utk memperbesar atau memperkecil huruf, kita klik menu Preferences > 
+    Font > Pilih mau Larger atau Smaller
+
+ >> Shortcut memperbesar atau memperkecil font = Ctrl + = dan Ctrl + Shift + +
+
+ >> Merubah skema warna dgn klik menu Preferences > Select Color Scheme > 
+    Pilih skema warna yg diinginkan
+
+ >> Jika ingin melihat sidebar dgn klik menu View > Sidebar > Show Sidebar
+
+ >> Jika sudah terbuka folder yg kita pakai, gk perlu lagi buat file baru 
+    menggunakan cara sebelumnya, cukup dgn klik kanan folder, lalu klik New 
+    File lalu simpan dgn ekstensi .html
+
+ >> Shortcut utk show dan hide sidebar = Ctrl + K,B
+
+ >> Klo kita mau buka 2 file sekaligus, akan muncul seperti tab di browser
+
+ >> Klo mau lihat file yg sudah kita buat di browser, tinggal klik kanan di 
+    area mana saja, lalu klik opsi open in browser, maka otomatis akan muncul 
+    file yg sudah kita buat di web browser
+
+ >> Klo mau pelajari secara detail bisa kunjungi web : sublimetext.com, lalu 
+    ke menu support dan pilih tulisan link utk documentation index

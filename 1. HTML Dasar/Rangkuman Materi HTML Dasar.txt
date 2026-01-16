@@ -1,0 +1,482 @@
+ >> PENGENALAN HTML << 
+
+
+ >> HTML (Hypertext Markup Language) = Bahasa Markup, berisi serangkaian 
+				       markup yg disebut tag
+
+    => Fungsi -> Membuat struktur halaman dan menyajikan konten
+
+ >> Tag (<></>) = Memberitahu browser gimana konten ditampilkan
+
+    => Tipe -> Berpasangan(<></>) dan tidak berpasangan(<>)
+
+
+ >> STRUKTUR DASAR HTML <<
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+ >> ATRIBUT GLOBAL <<
+
+
+    1. accesskey = Menentukan suatu elemen dapat di akses menggunakan shortcut
+
+    2. class = Penanda supaya elemen bisa dimanipulasi CSS atau JavaScript
+
+    3. id = Penanda supaya elemen bisa dimanipulasi CSS atau JavaScript
+    
+    4. dir = Menentukan arah tulisan
+  
+    5. lang = language/Bahasa
+  
+    6. style = Menyisipkan inline CSS
+  
+    7. tabindex = Menentukan urutan focus kursor ketika kita menekan tab
+
+    8. title = Memberi judul pada sebuah elemen
+
+
+ >> TAG-TAG YG ADA DI DALAM HTML <<
+
+
+ >> <!DOCTYPE html> = Memberi informasi terkait versi HTML yg digunakan 
+		      (HTML 5)
+
+ >> <head></head> = Menyimpan metadata, menghubungkan/menyisipkan CSS, membuat 
+		    judul, menyisipkan/menghubungkan JavaScript
+
+    => Tag di dlm tag head : 
+
+       1. <title></title> = Memberikan judul halaman(Bagian tab browser)
+
+       2. <style></style> = Menyisipkan CSS secara langsung
+
+       3. <script></script> = Menghubungkan atau menyisipkan JavaScript
+
+       4. <meta></meta> = Metadata
+
+	  => Fungsi -> Mendeskripsikan web, mempermudah pencarian di browser 
+		       dan mengidentifikasi web
+
+	  => Tipe -> 1. <meta charset="UTF-8"> = Utk encoding
+
+		     2. <meta name="description" content="">  = Utk deskripsi 
+								dari web
+
+		     3. <meta name="keywords" content="">  = Utk keyword dari 
+							     web
+
+		     4. <meta name="author" content="">  = Utk author dari web
+
+ >> <body></body> = Semua tulisan dlm tag ini akan ditampilkan di browser
+
+    => Tag di dlm tag body : 
+
+
+       >> TEKS <<
+
+
+       1. <h1></h1>, <h2></h2>, <h3></h3>, <h4></h4>, <h5></h5>, <h6></h6>
+
+	  => Fungsi -> Heading = Membuat hierarki kepentingan(headline 
+				 halaman, judul artikel)
+
+	  => Ukuran -> h1 = Terbesar, h6 = Terkecil
+
+       2. <p></p> = Membuat paragraph
+
+	  => Penerapan -> Jika dibuat lebih dari 1 tag p, maka antar tag p 
+			  akan ada jarak 1 space/baris
+
+
+       >> PENDUKUNG TEKS <<
+
+
+       3. <br> = Membari jarak 1 space/baris
+
+	  => Penerapan -> Bisa ditulis di luar tag lain, atau di dlm tag
+
+       4. <hr> = Memberi garis horizontal
+
+	  => Penerapan -> Tidak bisa ditulis di dlm tag
+
+       5. <b></b> = Membuat teks menjadi huruf tebal
+
+	  => Penerapan -> Bold = sama seperti tag <br>, teks yg ditulis di dlm 
+				 tag ini akan menjadi huruf tebal semua
+
+       6. <i></i> = Membuat teks menjadi huruf miring
+
+          => Penerapan -> Italic = sama seperti tag <b></b>
+
+       7. <u></u> = Memberi garis bawah pada teks
+
+          => Penerapan -> Underline = sama seperti tag <b></b>
+
+       8. <strong></strong> = Memberi penekanan makna (seperti Bold)
+
+          => Penerapan -> Strong = sama seperti tag <b></b>
+
+       9. <em></em> = Memberi penekanan lebih lemah dari Strong (seperti 
+		      Italic)
+
+          => Penerapan -> Emphasize = sama seperti tag <b></b>
+
+
+       >> LIST <<
+
+
+       10. <ol></ol> = Membuat list terurut
+
+	   => Penerapan -> Ordered List = Tulis tag ini, kemudian di dlmnya 
+			   tulis tag <li></li>, Isi tag li
+
+	   => Atribut -> type, valuenya -> 1(default), A, a, I, i
+
+       11. <ul></ul> = Membuat list tidak terurut
+
+	   => Penerapan -> Sama seperti tag <ol></ol>
+
+	   => Atribut -> type, valuenya -> disc(default), square, circle
+
+       12. <li></li> = Isi dari list
+
+	   => Penerapan -> Ditulis di dlm tag <ul></ul> atau tag <ol></ol>
+
+       13. <dl></dl> = Membuat list terminology dan definisi
+
+	   => Penerapan -> Definition List = Tulis tag ini, kemudian di dlmnya 
+			   tulis tag <dt></dt> dan <dd></dd> yg sejajar dan 
+			   masing-masing di isi sesuai fungsinya
+
+       14. <dt></dt> = Membuat terminology
+
+	   => Penerapan -> Definition Term = Ditulis di dlm tag <dl></dl> dan 
+			   sebelum tag <dd></dd> ditulis sejajar
+
+       15. <dd></dd> = Membuat deskripsi/penjelasan dari terminology
+
+	   => Penerapan -> Definition Description = Ditulis di dlm tag 
+			   <dl></dl> dan setelah tag <dt></dt> ditulis sejajar
+
+	   => Hasil -> Akan muncul indentasi terhadap isi tag <dt></dt>
+
+
+       >> HYPERLINK/ANCHOR <<
+
+
+       16. <a></a> = Utk menyimpan hyperlink
+
+	   => Link = Koneksi dari sumber web ke web lain
+
+	   => Penerapan -> Anchor = Bisa ditulis di luar tag lain, atau di dlm 
+			   tag
+
+	   => Atribut :
+
+	      1. href = Sumber penghubung antar halaman
+	      
+		 => Value : 
+
+		    >> External Link = Link ke web lain
+
+		    >> Internal Link = Halaman web lain dlm domain/satu domain 
+		       		       dgn web yg dibuat
+
+		    >> Relative URL = Halaman web lain di dlm folder lain, 
+		       		      perlu tulis nama foldernya
+
+		    >> Page Anchor = Bagian tertentu dari halaman, bisa 
+		       		     berpindah ke halaman lain sekaligus 
+				     bagian tertentu dari halaman tersebut
+
+	      2. target = Tipe perpindahan halaman
+
+		 => Value :
+
+		    >> _self = Membuka link di halaman yg sama
+
+		    >> _blank = Membuka link ke tab baru
+
+		    >> _parent = ...(Utk frame)
+
+		    >> _top = ...(Utk frame)
+
+
+       >> GAMBAR <<
+
+
+       17. <img> = Menyimpan dan menampilkan gambar
+       
+	   => Penerapan -> Image = Tulis tag ini bersama dgn atribut src, isi 
+			   atribut src dgn lokasi gambar
+
+	   => Atribut : 
+
+	      1. src = Sumber gambar mau ambil darimana 
+	      
+		 => Value : 
+
+		    >> Internal Resource = Gambar yg dimiliki/sudah ada/sudah 					   di download
+
+		       => Penerapan -> Gambar dan file html di folder berbeda, 
+				       relative url diterapkan
+
+		    >> External Resource = Gambar yg ada di internet/hotlink 
+					   (tidak disarankan)
+
+	      2. alt = Memberi alternative teks ketika gambar tidak muncul
+
+	      3. title = Memberi judul gambar, ketika kursor mengarah ke 
+			 gambar
+
+	      4. width = Mengatur lebar gambar
+
+		 => Value -> px dan % (ukuran relative terhadap halaman)
+
+		 => Penerapan -> Jika ditulis tanpa height, maka tinggi dari 
+				 gambar akan menyesuaikan proporsi gambarnya
+
+	      5. height = Mengatur tinggi gambar
+
+		 => Value -> Sama seperti width
+
+		 => Penerapan -> Sama seperti width
+
+
+       >> TABEL <<
+
+
+       18. <table></table> = Menampilkan data tabular seperti MS.Word dan 
+			     MS.Excel
+	   
+	   => Fungsi -> Menampilkan anggaran biaya, skor kompetisi, kalender, 
+			dll
+
+	   => Struktur -> 1. Baris = Kotak table horizontal 
+
+			  2. Kolom = Kotak table vertical
+
+			  3. Cell = Potongan baris dan kolom 
+
+			  4. Header = Judul tiap kolom atau baris table
+
+	   => Atribut : 
+
+	      >> border = Menambah garis disekitar cell
+
+		 => Value -> px(pixel), ditulis tanpa gunakan px di 
+			     belakangnya
+	
+	      >> cellspacing = Menambah jarak antar cell
+
+		 => Value -> 1(default), penulisan sama seperti border, harus 
+			     menulis 0 utk menghilangkan garis cellspacing
+
+	     >> cellpadding = Memberi luas pada cell, memberi ruang antara 
+			      border dan teks
+
+	   => Tipe Struktur Tabel : 
+
+	      1. Contoh Simple : 
+
+			<table>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+
+	      2. Contoh Complex : 
+
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Kolom 1</th>
+						<th>Kolom 2</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Baris 1</th>
+						<td>Baris 1, Kolom 1</td>
+						<td>Baris 1, Kolom 2</td>
+					</tr>
+					<tr>
+						<th>Baris 2</th>
+						<td>Baris 2, Kolom 1</td>
+						<td>Baris 2, Kolom 2</td>
+					</tr>
+				</tbody>
+			</table>
+
+       19. <tr></tr> = Membuat baris table (Table Row)
+
+       20. <td></td> = Membuat kolom table (Table Data)
+
+	   => Penerapan -> Tulis di dlm tag tr, isi data di dlm nya
+
+	   => Atribut : 
+
+	      1. colspan = Menggabungkan 2 atau lebih kolom
+
+	      2. rowspan = Menggabungkan 2 atau lebih baris
+
+       21. <thead></thead> = Membuat header di table complex
+
+	   => Penerapan -> Tulis tag ini di dlm tag <table></table>
+
+       22. <tbody></tbody> = Bagian body dari table complex
+
+	   => Penerapan -> Tulis tag ini di dlm tag <table></table>, setelah 
+			   tag <thead></thead>, ditulis sejajar
+
+       23. <th></th> = Mirip seperti tag <td></td>, tetapi dikhususkan 
+		       digunakan utk membuat header dlm baris table complex
+
+	   => Penerapan -> Ditulis di dlm tag tr
+
+
+       >> FORM <<
+
+
+       24. <form></form> = Elemen HTML utk mengelola data inputan user
+
+	   => Fungsi -> Membuat login form, form registrasi, dll
+
+
+       >> ELEMEN-ELEMEN FORM <<
+
+
+       25. <input> = Utk membuat textfield agar user bisa menginput sesuatu
+
+	   => Atribut : 
+
+	      1. type = Pilihan tipe input
+
+		 => Value : 
+
+		    >> text = Membuat textfield(default)
+
+		    >> password = Membuat textfield tipe password(akan tampil 
+				  titik-titik jika diinputkan)
+
+		    >> radio = Membuat radio button
+
+		       => Fungsi -> Membuat inputan opsi pilihan
+
+		       => Penerapan -> Gunakan atribut name pada dua atau 
+				       lebih tag <input> dgn value yg sama, 
+				       agar ketika opsi terpilih, hanya 
+				       terpilih salah satu saja
+
+		    >> checkbox = Membuat checkbox
+
+		       => Fungsi -> Membuat inputan opsi pilihan lebih dari 1
+
+		    >> submit = Utk membuat tombol yg ketika di klik, akan 
+				mengirim data ke server(Tidak disarankan 
+				digunakan)
+
+		    >> reset = Utk membuat tombol yg ketika di klik, akan 
+			       menghapus semua data(Tidak disarankan 
+			       digunakan)
+
+		    >> button = Utk membuat tombol yg ketika di klik, akan 
+				memberi fungsi spesifik(Tidak disarankan 
+				digunakan)
+
+	      2. id = Penanda pada elemen HTML
+
+	   => Penulisan -> <input type="(value)">
+
+	   => Penerapan -> Gunakan tag <label></label> setiap mau menerapkan 
+			   tag <input> utk memberi penanda textfield yg akan 
+			   diisi user
+		     
+
+       26. <textarea></textarea> = Membuat tempat utk menginput data, lebih 
+				   besar dari textfield, tulisan lebih banyak
+
+	   => Fungsi -> Menginput isi artikel, testimoni, komentar, dll
+
+       27. <select></select> = Membuat dropdown menu
+
+	   => Penerapan -> Tulis tag ini, di dlmnya tulis beberapa tag 
+			   <option></option>
+
+       28. <option></option> = Isi dari dropdown menu ketika menerapkan tag 
+			       <select></select>
+
+	   => Penerapan -> Ditulis di dlm tag <select></select>, isi tagnya 
+			   dgn beberapa opsi
+
+       29. <button></button> = Membuat tombol
+
+	   => Fungsi -> Mengirim data inputan atau hal spesifik lainnya
+
+	   => Atribut : 
+
+	      1. type = Pilihan tipe button
+
+	         >> submit = Mengirim data
+
+	         >> reset = Menghapus semua data
+
+	         >> button = Memberi fungsi spesifik pada button
+
+       30. <label></label> = Menandai tag <input>
+
+	   => Atribut -> for = Memberi nama kepemilikan berdasarkan atribut id 
+			       atau class di dlm tag input
+
+	   => Hasil -> Ketika label memiliki atribut for dgn value yg sama 
+		       pada id di tag <input>, maka ketika tulisan di tag 
+		       label di klik, kursor akan berada di textfield tag 
+		       <input> tersebut
+
+
+       >> SCRIPT << 
+
+
+       31. <script></script> = Menyisipkan/menghubungkan JavaScript
+
+	   => Atribut -> src = Sumber JavaScript mau ambil darimana
+
+	      >> Value -> Sama seperti src di tag <img>
+
+
+       >> OBJECT <<
+
+
+       32. <object></object> = Menyisipkan objek
+
+
+       >> GROUPING << 
+
+
+       33. <div></div> = Membuat grouping elemen HTML
+
+	   => Penerapan -> Display default nya block, gunakan utk membuat 
+			   section atau layout
+
+       34. <span></span> = Membuat grouping teks atau elemen HTML
+
+	   => Penerapan -> Display default nya inline, gunakan utk memberi 
+			   styling pada teks atau paragraf
+
+
+       >> KOMENTAR <<
+
+
+       35. <!-- ini adalah komentar. --> = Pengingat/footnote syntax yg telah 
+					   dibuat

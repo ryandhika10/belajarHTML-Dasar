@@ -1,0 +1,157 @@
+ >> PENERAPAN FORM HTML << 
+
+
+ >> Form = Elemen HTML utk mengelola data dari input yg dilakukan user(isi 
+	   data, pilih combo box atau dropdown menu, pilih radio button dan 
+	   menekan tombol)
+
+ >> Jenis form = Login form, form registrasi
+
+ >> Cara buat form : 
+
+    1. Tag form(<form></form>) = Utk membuat form, sebelum bikin elemen input 
+				 terlebih dahulu bungkus dgn tag ini utk 
+				 memberitahu kalua semua elemen input adalah 
+				 bagian dari elemen form
+
+    2. Di dlm tag form kita simpan elemen form
+
+ >> Elemen-elemen form : 
+
+    1. input = digunakan agar user bisa menginput sesuatu(hanya berupa kolom)
+
+    2. textarea = Mirip textfield, tetapi lebih banyak yg bisa 
+		  diisikan(komentar, pesan)
+
+    3. select = Membuat dropdown atau combo box
+
+    4. button = Utk membuat tombol mengirim data, atau hal spesifik
+
+    5. label = Menandai elemen input
+
+ >> Input memiliki atribut bernama type yg di dlmnya bisa diisi beberapa 
+    value : 
+
+    1. text = Membuat textfield
+
+    2. password = Membuat inputan texfield tidak terlihat(berbentuk point, 
+		  bisa di ubah)
+
+    3. radio = Membuat radio button(opsi pilihan)
+
+    4. checkbox = Membuat input tipe checkbox(pilihan lebih dari 1)
+
+    5. submit = Digunakan pada button(tidak disarankan menggunakan tag input), 
+		utk mengirim data
+
+    6. reset = Digunakan pada button(tidak disarankan menggunakan tag input), 
+	       utk menghapus semua data
+
+    7. button = Digunakan pada button(tidak disarankan menggunakan tag input), 
+		utk memberi fungsi spesifik pada button
+
+ >> Penulisan tag input : <input type="(value)">
+
+ >> Penerapan tag form beserta input elemennya : 
+
+    1. Buat folder baru yg di dlmnya terdapat file dgn ekstensi .html, dimana 
+       file tersebut dibuat struktur html sederhana
+
+    2. Buat tag form terlebih dahulu, kemudian coba tag input dgn atribut type 
+       valuenya text
+
+       => Contoh input tipe text : 
+
+		<form action="">
+			<input type="text">
+		</form>
+
+       => Hasilnya akan tampil sebuah kolom kotak yg ketika di klik, kita bisa 
+	  menginputkan teks di dlmnya(huruf/angka/simbol)
+
+    3. Karena hanya kotak, kita tidak tahu kotak ini utk apa, maka gunakanlah 
+       tag label utk menandai tag input
+
+    4. Di dlm tag label terdapat atribut for yg digunakan utk nama kepemilikan 
+       dari tag input apa, kalua ditambahkan atribut tersebut, maka tag input 
+       juga harus ditambahkan atribut id, lalu diisikan valuenya, value dari 
+       for tadi, beri value yg sama dgn id di tag input
+
+       => Contoh label : 
+
+		<form action="">
+			<label for="username">Username : </label>
+			<input type="text" id="username">
+		</form>
+
+       => Hasilnya akan muncul isi dari tag label, ketika di klik, maka kursor 
+	  otomatis mengarah ke kolom input
+
+    5. Utk tipe password, kita bisa ubah tipe yg awalnya text menjadi password
+
+       => Contoh input tipe password :
+
+		<label for="password">Password : </label>
+		<input type="password" id="password">
+
+       => Hasilnya, ketika kita tulis di textfield dgn tipe password, maka 
+	  inputannya akan disembunyikan
+
+    6. Utk tipe radio button, kita bisa ubah tipenya menjadi radio, biasa 
+       digunakan utk memilih salah satu dari beberapa opsi
+
+       => Contoh input tipe radio button : 
+
+		<input type="radio" id="pria"><label for="pria">Pria</label>
+		<input type="radio" id="wanita"><label for="wanita">
+		Wanita</label>
+
+       => Hasilnya akan menampilkan radio button dgn label di sebelah kanan, 
+	  tetapi ketika kita klik keduanya, maka akan terpilih kedua jenis 
+	  kelamin tersebut, yg harusnya kepilih salah satu saja. Solusinya 
+	  gunakan atribut name dgn mengisi value yg sama di kedua tag inputnya
+
+       => Contoh input tipe radio button dgn atribut name : 
+
+		<input type="radio" id="pria" name="jenisKelamin"><label 
+			for="pria">Pria</label>
+		<input type="radio" id="wanita" name="jenisKelamin"><label 
+			for="wanita">Wanita</label>
+
+    7. Utk memilih lebih dari 1 opsi gunakan tipe checkbox, caranya kita beri 
+       value pada atribut type dgn tulis checkbox
+
+       => Contoh input tipe checkbox : 
+
+		<input type="checkbox" id="ngegame">
+		<label for="ngegame">Ngegame</label>
+		<input type="checkbox" id="anime">
+		<label for="anime">Nonton Anime</label>
+		<input type="checkbox" id="ngoding">
+		<label for="ngoding">Ngoding</label>
+
+    8. Selanjutnya, kita bisa kasih input tipe submit, digunakan utk mengirim 
+       hasil inputan user
+
+       => Contoh : 
+
+		<input type="submit" value="Kirim">
+
+       => Hasilnya akan muncul tombol dgn tulisan "Kirim", value digunakan utk 
+	  mengganti tulisan yg ada di button inputan
+
+    9. Tombol tidak disarankan menggunakan elemen input, gunakanlah elemen 
+       button
+
+ >> Beberapa value dari atribut type yg ada di tag button (<button>
+    </button>) :
+
+    1. submit = Utk mengirim data
+
+    2. reset = Utk menghapus semua data
+
+    3. button = Utk memberi fungsi spesifik pada button
+
+    => Contoh ubah input submit, jadi button submit : 
+
+       <button type="submit">Kirim!</button>

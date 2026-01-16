@@ -1,0 +1,106 @@
+ >> PENERAPAN LIST << 
+
+
+ >> Tag membuat list di HTML : 
+
+    1. <ol></ol> = Membuat list terurut (Ordered List)
+
+    2. <ul></ul> = Membuat list tidak terurut (Unordered List)
+
+    3. <dl></dl> = Membuat daftar terminologi dan definisi (Definition List)
+
+ >> Sebelum memulai penerapannya, ikuti Langkah berikut : 
+
+    1. Buat folder baru utk menyimpan penerapan penggunaaan tag list
+
+    2. Buat file di dlm nya dgn nama list.html
+
+    3. Buat struktur dasar HTML dgn titlenya diisi HTML List
+
+
+ >> ORDERED LIST <<
+
+    => Contoh penerapannya, membuat to do list, buat judul dulu dgn heading, 
+       lalu tulis tag ol yg di dlmnya ada tag li
+
+ >> <li></li> = List Item
+
+ >> Di dlm list item, tulis kegiatan apa yg akan dilakukan
+
+    => Contoh <ol></ol> : 
+
+<body>
+	<h3>To Do List</h3>
+	<ol>
+		<li>Bangun Pagi</li>
+		<li>Sarapan</li>
+		<li>Tidur lagi</li>
+	</ol>
+</body>
+
+ >> Ketika dijalankan di browser maka akan tampil berupa daftar to do list 
+    dengan list berurut menggunakan angka dari 1-3
+
+ >> Kita bisa menggunakan atribut type di dlm tag ol utk merubah urutan angka 
+    ke urutan lain, ada beberapa type, yaitu 1, A, a, I, i. Default dari tag 
+    ol adalah tipe 1
+
+    => Contoh : 
+
+<ol type="A">
+
+ >> Hasilnya akan membuat urutan huruf kapital besar mulai dari A-C
+
+
+ >> UNORDERED LIST <<
+
+
+ >> Penerapannya sama seperti tag ol, bedanya urutan dari tag li tidak 
+    berpengaruh. Contoh membuat daftar makanan yg akan saya makan saat sarapan
+
+    => Contoh <ul></ul> :
+
+	<h3>Saat sarapan, saya akan makan</h3>
+	<ul>
+		<li>Nasi Goreng</li>
+		<li>Mie Goreng</li>
+		<li>Telur Dadar</li>
+	</ul>
+
+ >> Ketika menggunakan ul, urutan dari item tidak berpengaruh, jadi kita mau 
+    makan yg mana duluan tidak akan berpengaruh terhadap list
+
+ >> Default type dari tag ul adalah bullets(titik)/disc ada beberapa value 
+    atribut type yg bisa kita pilih utk mengubah default type dari tag ul, 
+    yaitu disc, square dan circle
+
+    => Contoh : 
+
+	<ul type="circle">
+
+ >> Hasilnya akan membuat urutan dgn symbol lingkaran bolong
+
+
+ >> DEFINITION LIST <<
+
+
+ >> Penerapannya yaitu pertama kita buat tag dl yg di dlmnya terdapat tag dt 
+    dan dd yg isinya berpasangan tiap membuat list daftarnya
+
+ >> <dt></dt> = Utk membuat terminology, ditulis di dlm tag dl (Definition 
+		Term)
+
+ >> <dd></dd> = Utk membuat deskripsi dari terminology, ditulis setelah tag dt 
+		di dlm tag dl (Definition Description)
+
+    => Contoh <dl></dl>, <dt></dt>, <dd></dd> : 
+
+<h3>Pemrograman Web 1</h3>
+	<dl>
+		<dt>HTML</dt>
+		<dd>Hypertext Markup Language</dd>
+		<dt>CSS</dt>
+		<dd>Cascading Style Sheet</dd>
+	</dl>
+
+ >> Otomatis baris kedua ditambahkan indentasinya

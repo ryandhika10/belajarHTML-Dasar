@@ -1,0 +1,81 @@
+ >> MENYIMPAN GAMBAR KE HTML <<
+
+
+ >> Tag yg digunakan = <img src="">
+
+ >> Atribut src wajib ada di tag image utk menyimpan gambar di dlmnya
+
+
+ >> PENERAPANNYA <<
+
+
+    1. Buat folder baru bernama Latihan 7 yg di dlmnya ada gambar dgn 
+       ekstensi .png dan file dgn nama image.html
+
+    2. Di dlm file image.html, buat struktur html standar
+
+    3. Ketik img, lalu tekan tab, maka otomatis akan dibuatkan tag image dgn 
+       atribut src
+
+ >> 2 Jenis file gambar yg bisa disimpan : 
+
+    1. Internal resource : Gambar yg ada di dlm folder kita/gambar yg kita 
+			   miliki
+
+    2. External resource : Gambar yg ada di internet(hotlink, tidak 
+			   disarankan)
+
+ >> Pastikan gambar berada di folder yg sama, kalau berbeda penulisan value 
+    src menerapkan relative url
+
+ >> Atribut yg dimiliki tag img :
+
+    1. src = Sumber gambar mau ambil darimana
+
+    2. alt = Utk memberikan alternative teks pada gambar ketika gambar tidak 
+	     tampil, maka teks yg kita tulis akan muncul
+
+    3. title = Memberi judul pada gambar, ketika kursor mengarah ke gambar
+
+    4. width = Mengatur lebar gambar
+
+    5. height = Mengatur tinggi gambar
+
+ >> Ketika kita tulis salah satu dari atribut width atau height, maka yg tidak 
+    kita tulis akan menyesuaikan dgn proporsi gambarnya
+
+ >> Value dari width dan height : px dan %(ukuran relative terhadap halaman)
+
+ >> Ketika value % diterapkan, maka jika kita resize ukuran browser, maka 
+    gambar akan menyesuaikan value % dari halaman. 
+
+ >> Kalau valuenya 50% maka ukurannya akan setengah dari halaman, ketika di 
+    resize browsernya, gambar akan menyamakan setengah dari gambar
+
+    => Contoh internal resource : 
+
+       <img src="Logo UB.png" height="100px">
+
+ >> Alasan external resource tidak disarankan :
+
+    1. Karena kita mengambil gambar yg berasal dari website lain, ketika 
+       menggunakan gambar dari web lain, artinya ketika user membuka web kita 
+       dgn gambar dari web lain, yg digunakan adalah bandwidth pemilik gambar, 
+       bukan bandwidth kita
+
+    2. Gambar memiliki hak cipta, ada kemungkinan tidak bebas akses
+
+    3. Bergantung ke web lain, Ketika web lain tersebut down/tidak bisa di 
+       akses, maka gambar tidak akan muncul
+
+ >> Cara menggabungkan gambar dgn hyperlink : 
+
+    1. buat tag a yg di dlmnya ada tag img, href mengarahkan ke halaman lain
+
+    => Contoh :
+
+	<a href="http://facebook.com">
+		<img src="Logo UB.png" height="100px" alt="">
+	</a>
+
+    => Ketika gambar di klik otomatis halaman akan berpindah ke facebook

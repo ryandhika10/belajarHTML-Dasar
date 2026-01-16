@@ -1,0 +1,110 @@
+ >> MENERAPKAN TAG PARAGRAF <<
+
+
+ >> Kita buat folder baru utk menyimpan penerapan tag p, jika sudah buat 
+    foldernya, kita drag dan drop folder ke dlm aplikasi sublime text
+
+ >> Buka sidebar utk melihat folder yg sudah bisa di akses di sublime text dgn 
+    shortcut Ctrl + K,B
+
+ >> Utk buat file baru, klik kanan pada folder, klik New File, save filenya 
+    terlebih dahulu dgn ekstensi .html sebelum digunakan
+
+ >> Buat standar HTML, tinggal ketik html, lalu tekan tab, ubah 
+    judulnya(Misal : HTML paragraf), lalu di dlm body kita buat tag paragraph, 
+    dgn ketik p, lalu tekan Tab
+
+    => Contoh : 
+
+<body>
+	<p>ini adalah paragraf 1</p>
+</body>
+
+ >> Utk melihat hasilnya, klik kanan lalu pilih open in browser, maka akan 
+    tampil hasilnya di web browser
+
+ >> Kalau kita membuat lebih dari 1 paragraph, HTML otomatis akan membuatkan 
+    jarak 1 space sebelum dan setelahnya
+
+ >> Kalau dirasa belum banyak jaraknya, kita bisa tambah jaraknya dgn <br> yg 
+    fungsinya utk menambahkan baris baru atau <hr> yg fungsinya membuat garis 
+    horizontal
+
+    => Contoh <br> : 
+
+<body>
+	<p>ini adalah paragraf 1</p>
+	<br>
+	<p>ini adalah paragraf 2</p>
+</body>
+
+ >> Otomatis jarak antar paragraph bertambah 1 baris. Tag br juga bisa 
+    disimpan di dlm tag, contohnya tag p
+
+    => Contoh <br> :
+
+<body>
+	<p>ini adalah paragraf 1</p>
+	<br>
+	<p>ini adalah <br>paragraf 2</p>
+</body>
+
+ >> Hasilnya tulisan "paragraf 2" akan turun satu baris setelah tulisan 
+    "ini adalah"
+
+    => Contoh <hr> : 
+
+<body>
+	<p>ini adalah paragraf 1</p>
+	<br>
+	<p>ini adalah <br>paragraf 2</p>
+	<hr>
+</body>
+
+ >> Maka akan muncul garis setelah tulisan "paragraf 2"
+
+ >> <b></b> = Membuat teks menjadi bold (huruf tebal)
+
+ >> <i></i> = Membuat teks menjadi italic (huruf miring)
+
+ >> <u></u> = Menambahkan underline pada teks (garis bawah)
+
+    => Contoh penerapan tag b, i dan u : 
+
+	<p><b>Selamat datang</b> di kuliah <i>pemrograman web 1</i></p>
+	<p>Nama saya <u>Ryan Dhika Permana</u></p>
+
+ >> Hasilnya adalah tulisan "Selamat datang" akan menjadi huruf tebal, tulisan 
+    "pemrograman web 1" akan menjadi huruf miring dan "Ryan Dhika Permana" 
+    akan ada garis Bawah
+
+ >> Ketiga tag (b, i dan u) tersebut adalah tag dekorasi, yg bisa dilakukan 
+    juga menggunakan CSS
+
+ >> Paragraf memiliki makna, misal teks tersebut adalah penekanan atau teks 
+    tersebut adalah teks penting, gunakan <strong></strong> dan <em></em>
+
+    1. <strong></strong> = Memberi penekanan lebih kuat dari tag em (Seperti 
+			   bold)
+
+    2. <em></em> = Emphasize/penekanan, memberi penekanan pada sebuah teks 
+		   (Seperti Italic)
+
+    => Contoh penerapan tag strong dan em : 
+
+	<p>
+		<strong>Pengumuman</strong>
+		 kuliah pemrograman web 1, rabu 28 Mei 2025 
+		<em>ditiadakan!</em>
+	</p>
+
+ >> Hasilnya tulisan "Pengumuman" berubah jadi cetak tebal dan tulisan 
+    "ditiadakan!" berubah jadi cetak miring sama seperti penerapan tag b dan i
+
+ >> Namun penggunaan tag strong dan em memiliki makna berbeda dari sekedar 
+    estetika atau dekorasi di paragraf sebelumnya
+
+ >> Setelah mengetikkan syntax, biasakan memberi komentar utk informasi syntax 
+    yg diterapkan fungsinya utk apa
+
+ >> Shortcut memberi komentar = Ctrl + /

@@ -1,0 +1,124 @@
+ >> Tag = Kode dlm HTML dimana kita menuliskan <nama_tag></nama_tag>
+
+ >> Tipe tag = Berpasangan (<nama_tag></nama_tag>), tidak berpasangan 
+	       (<nama_tag>)
+
+ >> Struktur dasar HTML : 
+
+<!DOCTYPE html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+</body>
+</html>
+
+ >> Tag yg bisa di simpan di dlm tag head : 
+  
+    1. <title></title> = Judul halaman
+
+    2. <style></style> = CSS
+
+    3. <script></script> = JavaScript
+
+    4. <meta></meta> = Metadata 
+       => Utk mendeskripsikan website kita, mempermudah search engine 
+	  mengidentifikasi website yg kita buat
+
+ >> Tipe metadata : 
+
+    1. <meta charset="UTF-8"> 
+       => Utk encoding 
+
+    2. <meta name="description" content="Kuliah Pemrograman Web"> 
+       => Deskripsi dari website kita
+
+    3. <meta name="keywords" content="HTML, CSS, JavaScript"> 
+       => Keyword
+
+    4. <meta name="author" content="Ryan Dhika Permana"> 
+       => Author atau pembuatnya
+
+ >> Tag yg bisa di simpan di dlm tag body : 
+
+    1. Teks = <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <p>, ...
+
+       => Heading <h(angka)></h(angka)> = Teks dgn ukuran dari h1 yg terbesar
+					  hingga h6 yg terkecil
+
+       => Paragraf <p></p> = Utk membuat paragraph
+
+    2. Pendukung teks = <br>, <hr>, <em>, <strong>, ...
+
+       => <br> = Menambah baris baru
+
+       => <hr> = Menambah garis horizontal
+
+       => <em> = ...
+
+       => <strong> = ...
+
+    3. Gambar = <img> => Utk menyimpan dan menampilkan gambar
+
+    4. Hyperlink(anchor) = <a> => Utk menyimpan hyperlink
+
+    5. List (bullets & numbering) = <ul>, <ol>, <li>, <dl>, <dt>, <dd>
+
+       => <ul> = Unordered list -> List tidak terurut(titik, garis, panah)
+
+       => <ol> = Ordered list -> List terurut(angka)
+
+       => <li> = List item -> Ditulis di dlm ul atau ol
+
+       => <dl> = Definition list -> ...
+
+    6. Tabel = <table>, <thead>, <tbody>, ...
+
+    7. Form = <form>, <input>, <select>, <button> ...
+
+    8. Script = <script>
+
+    9. Object = <object>
+
+    10. Grouping = <div>, <span>
+
+    11. Komentar = <!-- ini adalah komentar. -->
+
+ >> Tiap bahasa memiliki tag komentar masing2, <!--Isi Komentar--> ini utk 
+    HTML
+
+ >> Tag komentar tidak akan tampil di web browser, digunakan utk mengingat 
+    syntax yg dibuat developer
+
+ >> Struktur tag = <nametag atribut="nilai">
+
+    => Contoh : <body bgcolor="lightblue"> -> Halaman web akan berwarna 
+					      background lightblue
+
+    => Tidak disarankan memberi warna langsung ke HTML, gunakan CSS utk 
+       melakukannya
+
+ >> 1 Tag boleh memiliki lebih dari 1 atribut
+
+    => Contoh : <body bgcolor="lightblue" id="myid" class="myclass">
+
+ >> Atribut Global : 
+
+    1. accesskey = Menentukan elemen ini bisa di akses menggunakan shortcut
+
+    2. class = Penanda supaya elemen bisa dimanipulasi CSS atau JavaScript
+
+    3. id = Penanda supaya elemen bisa dimanipulasi CSS atau JavaScript
+    
+    4. dir = Menentukan arah tulisan
+  
+    5. lang = language/Bahasa
+  
+    6. style = Menyisipkan inline CSS
+  
+    7. tabindex = Menentukan urutan focus kursor ketika kita menekan tab
+
+    8. title = Memberi judul pada sebuah elemen
+
+ >> Lebih lengkap mengenai atribut HTML = www.w3scholl.com/Tags

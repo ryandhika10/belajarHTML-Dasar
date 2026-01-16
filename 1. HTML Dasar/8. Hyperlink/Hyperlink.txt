@@ -1,0 +1,165 @@
+ >> PENERAPAN HYPERLINK <<
+
+
+ >> Link = Koneksi dari sebuah sumber web ke web lain
+
+ >> Jika tidak ada hyperlink, tidak ada juga web
+
+ >> Link dibuat dgn menggunakan tag a (<a></a>) singkatannya anchor
+
+ >> Anchor = Istilahnya jangkar pasti terhubung dgn kapal, sama seperti 
+	     hyperlink pasti terhubung dgn sumber
+
+ >> Sama seperti sebelumnya, utk memasuki tahap penerapan, buat dlu folder yg 
+    di dlmnya ada file dgn ekstensi .html yg di dlmnya ditulis syntax standar 
+    html
+
+ >> Buat paragraph dgn tulisan "Klik disini untuk mengetahui informasi lebih 
+    lanjut.", dan kata "disini" dibungkus tag a atau hyperlink agar ketika 
+    tulisannya di klik akan digunakan utk terhubung ke halaman lain
+
+    => Contoh : 
+
+<body>
+	<p>Klik <a>disini</a> untuk mengetahui informasi lebih lanjut</p>
+</body>
+
+ >> Hasilnya kata "disini" masih belum menerapkan hyperlink, karena kita butuh 
+    atribut yg Namanya href di tag a, di dlm atribut href bisa kita beri value 
+    sumber, ada beberapa jenis sumber : 
+
+    1. External link = Link ke website lain, seperti terhubung ke google
+
+       => Contoh : <a href="http://www.google.com">disini</a> 
+
+       => Secara otomatis kata yg dibungkus tag link akan berubah style 
+	  menjadi warna biru dan memiliki underline, ketika belum mengakses 
+	  sumber, warna dari kata itu berwarna biru, namun Ketika kita sudah 
+	  pernah mengunjungi  sumber, maka warna kata akan berwarna ungu
+
+       => Ketika kata tersebut di klik dan kita terhubung dgn internet, maka 
+          halaman akan berpindah ke google
+
+    2. Internal link = Halaman website lain di dlm domain kita/satu domain dgn 
+		       website yg kita buat (Misal : Kita hubungkan halaman 
+		       kita dgn halaman admin atau produk yg pernah kita buat)
+
+       => Contoh : Kita buat file lain dgn nama halaman2 dgn ekstensi .html, 
+		   hubungkan web kita ke file tersebut
+
+       		   => <a href=halaman2.html>disini</a>
+
+       => Hasilnya, Ketika link di klik halaman atau file akan berpindah ke 
+	  halaman 2. Utk berpindah Kembali ke file sebelumnya, kita buat tag a 
+	  lagi dgn href diisi dgn value nama file sebelumnya
+
+       => Contoh : <a href="halaman1.html">Kembali ke Halaman 1</a>
+
+       => Maka sekarang kita bisa bolak balik ke halaman 2 dan ke halaman 1
+
+    3. Relative url = Halaman website lain di dlm folder lain, utk 
+		      mengaksesnya, kita tambahkan nama foldernya
+
+       => Contoh : Kita masukkan file halaman2.html ke dlm folder baru dgn 
+		   nama misalnya admin terlebih dahulu, ubah value href di 
+		   halaman1
+
+       		   => <a href=admin/halaman2.html>disini</a>
+
+       => Jadi dibacanya di dlm file halaman1 yg ada di folder Latihan 6, 
+	  masuk ke folder admin, lalu akses file halaman2.html
+
+       => Utk tag a yg kita buat di halaman2 Ketika di akses, akan terjadi 
+	  error, karena halaman 2 sekarang berada di folder admin, yg 
+	  sebelumnya file halaman 1 dan 2 berada di folder yg sama. Solusinya 
+	  kita ubah juga value href di file halaman2
+
+       => Contoh : 
+
+	  	   => <a href="../halaman1.html">
+
+       => "../" artinya keluar/naik terlebih dahulu 1 folder
+
+       => Sekarang kita masukkan file halaman1.html ke dlm folder baru Bernama 
+	  user, perlu kita ubah value href lagi di file halaman1 dan halaman2 
+	  agar kedua file bisa terhubung Kembali
+
+       => Contoh : 
+
+		   => halaman1 : <a href=../admin/halaman2.html>
+		   => halaman2 : <a href="../user/halaman1.html">
+
+       => halaman1 : Artinya, keluar/naik 1 folder, buka folder admin, akses 
+		     file halaman2.html
+
+       => halaman2 : Artinya, keluar/naik 1 folder, buka folder user, akses 
+		     file halaman1.html
+
+    4. Page anchor = Bagian tertentu dari halaman, bukan hanya masuk ke 
+		     halaman, melainkan juga pindah ke bagian tertentu dari 
+		     halaman
+
+       => Contoh : Sebelum penerapan, kita kembalikan file halaman 1 dan 2 di 
+		   1 folder, dan hapus folder user dan admin yg kita buat, 
+		   lalu buat file baru Namanya halaman 3 dan buat struktur 
+		   dasar html dan buat tag h1 utk memberi judul sampai 3 
+		   bagian yg di bawahnya masing2 dibuat 2 paragraph berisi 
+		   lorem ipsum. Per bagian dipisahkan dgn 10 tag br
+
+       => Ini emmetnya, bikin 3 bagian : (h2{Bagian $}+(p>lorem)+(p>lorem)+br+ 
+					 br+br+br+br+br+br+br+br+br)*3, lalu 
+					 tekan tab
+
+       => Pastikan utk bagian 2 buat 2 paragraph, bagian 2 3 paragraph dan 
+	  bagian 3 1 paragraf
+
+       => Setelahnya, kita buat page anchor dgn buat 3 tag a/link yg dibungkus 
+	  tag list tidak terurut utk menampilkan bagian 1, 2 dan 3 ketika klik 
+	  salah satu dari ketiga link
+
+       => Kemudian buat bagian 1, 2 dan 3 penanda/anchor, yaitu atribut id 
+	  selanjutnya kita panggil dgn menggunakan symbol "#" yg menandakan id
+
+       => Contoh : 
+
+			<ul>
+				<li><a href="bagian1">Bagian 1</a></li>
+				<li><a href="bagian2">Bagian 2</a></li>
+				<li><a href="bagian3">Bagian 3</a></li>
+			</ul>
+
+			<h2 id="bagian1">Bagian 1</h2>
+
+       => Maka ketika klik link tulisan "bagian1" maka akan scroll ke bagian 
+	  1, "bagian2", ke bagian 2 dan "bagian3" ke bagian 3. Namun di bagian 
+	  3 tidak berada di paling atas, karena spasi setelah bagian 3 sudah 
+	  mencapai batas. Solusinya adalah tambahkan tag br, misal membuat tag 
+	  br menjadi 30
+
+       => Dari halaman1.html, kita bisa mengakses halaman3 sekaligus mau 
+	  menampilkan bagian ke berapa dari halaman3 yg sudah kita buat, 
+	  caranya dgn menuliskan halamannya, beserta id yg dituju menggunakan 
+	  tanda "#"
+
+       => Contoh : 
+
+		<a href="halaman3.html#bagian3">Ke Halaman 3, Bagian 3</a>
+
+ >> Atribut target = Utk merubah bagaimana cara kita membuka link
+
+ >> Value atribut target : 
+
+    1. _self = Utk membuka link di halaman yg sama
+
+    2. _blank = Utk membuka link ke tab baru
+
+    3. _parent = ...(Utk frame)
+
+    4. _top = ...(Utk frame)
+
+    => Contoh value _blank : 
+
+       		<a href=../admin/halaman2.html target="_blank">
+
+    => Hasilnya ketika link halaman2 di klik, maka akan membuka tab baru dan 
+       menampilkan halaman2.html

@@ -1,0 +1,108 @@
+ >> PENERAPAN TABLE HTML <<
+
+
+ >> Tabel = Biasa digunakan utk menampilkan data tabular layaknya MS.Word dan 
+	    MS.Excel, utk menampilkan anggaran biaya, skor kompetisi, 
+	    kalender, dll. Jgn membuat table utk membuat layout halaman
+
+
+ >> STRUKTUR TABEL << 
+
+
+ >> Baris = Kotak table yg horizontal
+
+ >> Kolom = Kotak table yg vertical
+
+ >> Cell = Perpotongan antara baris dan kolom(Si Kotaknya itu), dlm HTML 
+	   disebut data
+
+ >> Header = Judul tiap kolom atau baris table
+
+ >> <table></table> = Utk membuat table
+
+ >> Struktur table : 
+
+    1. Simple : Buat tag table yg di dlmnya ada tag tr utk membuat baris(table 
+		row), dan di dlm tag tr, ada tag td utk membuat kolom(table 
+		data)
+
+       => Contoh : 
+
+		<table>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+       => Contoh Implementasi buat 2 baris dan 2 kolom :
+
+	<table>
+		<tr>
+			<td>baris 1, kolom 1</td>
+			<td>baris 1, kolom 2</td>
+		</tr>
+		<tr>
+			<td>baris 2, kolom 1</td>
+			<td>baris 2, kolom 2</td>
+		</tr>
+	</table>
+
+    2. Complex : Digunakan jika datanya banyak dan struktur kompleks
+
+       => Contoh : 
+
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Kolom 1</th>
+				<th>Kolom 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Baris 1</th>
+				<td>Baris 1, Kolom 1</td>
+				<td>Baris 1, Kolom 2</td>
+			</tr>
+			<tr>
+				<th>Baris 2</th>
+				<td>Baris 2, Kolom 1</td>
+				<td>Baris 2, Kolom 2</td>
+			</tr>
+		</tbody>
+	</table>
+
+       => thead = Table head, utk menyimpan header
+
+       => tbody = Isi data dari table complex
+
+       => th = Table header, HTML membaca dia sebagai header, jadi dipakainya 
+	       th, bukan td
+
+       => Hasilnya akan membuat header dlm 2 sumbu
+
+ >> Atribut yg bisa digunakan di tag table : 
+
+    1. border = Bisa digunakan dgn CSS, utk menambahkan garis disekitar cell, 
+		satuan value pixel, ditulis tanpa pakai px
+
+    2. cellspacing = Bisa digunakan dgn CSS, utk menambah jarak antar cell, 
+		     defaultnya 1, karena Ketika tidak dirubah dan menambah 
+		     border di table, maka table yg tampil akan memiliki 2 
+		     garis. Makanya kita harus menulis valuenya 0 utk 
+		     menghilangkan garisnya
+
+    3. cellpadding = Bisa digunakan dgn CSS, utk memberi luas pada cell. Agar 
+		     memberi ruang antara garis dan huruf, gunakan atribut ini
+
+       => Contoh border, cellspacing dan cellpadding : 
+
+		<table border="1" cellspacing="0" cellpadding="5">
+
+       => Hasilnya akan tampil table yg memiliki border dgn garis 1 dan 
+	  memiliki Jarak antara huruf dan border sebesar 5 px
+
+    4. colspan = ...
+
+    5. rowspan = ...

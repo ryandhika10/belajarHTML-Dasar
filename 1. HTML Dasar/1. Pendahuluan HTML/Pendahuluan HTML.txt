@@ -1,0 +1,63 @@
+ >> PENDAHULUAN HTML <<
+
+
+ >> HTML <Hypertext Markup Language> = Bahasa markup, bukan bahasa 
+				       pemrograman, karena di dlmnya berisi 
+				       serangkaian markup yg disebut tag
+
+ >> Ciri bahasa pemrograman = Memiliki variable, function, structure 
+			      control(pengkondisian, pengulangan, dll)
+
+ >> Tag = Memberitahu browser bagaimana konten akan ditampilkan
+
+ >> Tim Berners-Lee = Pencipta HTML, sekaligus penemu HTTP, WWW, Web Browser, 
+		      Web Server, Web Page. Menjadi direktur dari konsorsium 
+		      W3C
+
+ >> W3C = World Wide Web Consortium, organisasi yg bertugas membuat standar 
+	  terhadap segala sesuatu yg ada di web (Link : www.w3.org)
+
+ >> Tugas W3C = Mengembangkan protocol dan panduan yg akan memastikan web 
+		berjalan dlm jangka Panjang
+
+ >> Lokasi W3C = Gk punya markas utama, namun gabungan dari berbagai 
+		 institusi, ada dari Amerika MIT di Cambridge, ada dari 
+		 Prancis ERCIM di Sophia-Antipolis, ada dari Jepang Keio 
+		 University dekat Tokyo dan dari China Beihang University di 
+		 Beijing
+
+ >> Selalu update web browser = Karena Jika aturan baru sdh dibuat, akan 				diterapkan di web browser
+
+ >> Karena web browser dimiliki berbeda organisasi, aturan yg dibuat W3C, 
+    diimplementasikan secara berbeda juga, bisa dari tampilan, performance, 
+    dll
+
+ >> HTTP dibuat pada tahun 1991, 1992 HTML1 ditemukan, setelahnya web browser 
+    pertama diciptakan bernama Mosaic yg mendukung HTML1, 1994 web browser 
+    Netscape diciptakan, 1995 Opera dan seterusnya
+
+ >> Setiap ada perubahan HTML, setelahnya ada update dari web browser
+
+ >> Teknologi baru dari 2008 hingga saat ini banyak sekali ditemukan
+
+
+ >> PERBEDAAN HTML, CSS DAN JAVASCRIPT <<
+
+
+ >> HTML = Utk membuat struktur sebuah halaman dan menyajikan konten
+
+ >> CSS = Utk menghias halaman menjadi lebih bagus
+
+ >> JavaScript = Bisa melakukan banyak hal, khususnya membuat halaman 
+		 interaktif, seperti ada animasi, slide show, dll
+
+
+ >> ILUSTRASI HTML, CSS DAN JAVASCRIPT <<
+
+
+ >> HTML = Mannequin
+
+ >> CSS = Pakaian yg bisa diganti-ganti
+
+ >> JavaScript = Kecerdasan, seperti mengambil keputusan, agar mannequin bisa 
+		 berjalan, berbicara, dll

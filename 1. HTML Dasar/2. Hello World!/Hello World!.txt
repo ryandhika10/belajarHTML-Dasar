@@ -1,0 +1,68 @@
+ >> MEMBUAT APLIKASI YG MENAMPILKAN HELLO WORLD <<
+
+
+ 1. Pertama buat folder terlebih dahulu agar file gk tercecer kemana2
+
+ 2. Buka Notepad, save file kosong notepad ke folder yg baru kita buat dgn 
+    nama halaman1 dgn ekstensi .html
+
+ 3. Ubah tipe penyimpanan jadi All Files agar tidak otomatis berubah jadi text
+
+ 4. Biasakan menulis nama file tanpa spasi
+
+ 5. Tulis hello world!, lalu save
+
+ 6. Buka filenya di browser, caranya double click filenya atau klik kanan 
+    pilih open
+
+ 7. Ini adalah halaman web pertama yg kita buat, namun isinya masih plain text 
+    atau teks biasa, bukan HTML
+
+ >> Utk membuat browser membaca file sebagai HTML, kita harus membuat struktur 
+    dasar utk HTML dlu
+
+ >> Penulisan struktur dasar HTML : 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    
+</body>
+</html>
+
+ >> <!DOCTYPE html> = Memberitahu browser kita akan membuat HTML versi 5
+
+ >> <></> = Tag, tiap tag ada pembuka dan penutup
+
+ >> Apapun yg akan kita tulis, harus berada di antara tag head atau tag body, 
+    tapi gk boleh di antaranya
+
+ >> <body></body> = Semua tulisan di dlm tag body akan ditampilkan di browser
+
+ >> Kalau struktur HTML digunakan, dan hello world! tadi ditulis di dlm tag 
+    body, maka browser akan tahu yg akan ditampilkan adalah halaman HTML, 
+    meskipun browsernya tidak tahu tulisan tersebut akan ditampilkan seperti 
+    apa
+
+ >> Maka otomatis hello world! akan ditampilkan sebagai plain text
+
+ >> Jika kita tambahkan teks di bawahnya dgn tulisan misalnya "selamat datang 
+    di kuliah pemrograman web 1", di browser akan tampil teks tersebut berada 
+    di sebelah teks hello world!, bukan di bawahnya
+
+ >> Karena browser gk tahu 2 tulisan akan ditulis sebagai apa
+
+ >> Agar jadi paragraph, kita bungkus tulisannya ke dlm tag paragraph, yaitu 
+    tag p (<p></p>)
+
+ >> Ketika di refresh kembali halaman web browser, browser langsung 
+    memperlakukan tulisan tadi sebagai paragraph, karena browser tahu di dlm 
+    HTML yg di buat ada 2 paragraph
+
+ >> <title></title> = Memberikan judul halaman
+
+ >> Kalau kita isi tag title, maka Ketika di refresh, web browser akan 
+    menampilkan isi title di dlm tab browser

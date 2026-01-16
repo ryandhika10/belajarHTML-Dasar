@@ -1,0 +1,53 @@
+ >> PENERAPAN HEADING <<
+
+
+ >> Buat folder baru utk menyimpan syntax yg akan kita tulis utk menerapkan 
+    heading
+
+ >> Buat tag HTML yg di dlm tag body terdapat tag h1 sampai h6 dgn isinya 
+    heading 1 sampai heading 6
+
+    => Contoh : 
+
+<body>
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+</body>
+
+ >> Ketika di jalankan di browser, maka akan tampil tag h1 memiliki ukuran 
+    font paling besar dan h6 memiliki ukuran font paling kecil
+
+ >> Penerapan penggunaan heading : 
+
+    1. Dgn membuat hierarki kepentingan, seperti headline halaman/judul 
+       artikel di blog menggunakan h1
+
+       => Karena elemen headline atau judul artikel merupakan elemen penting 
+	  di halaman kita
+
+    2. Gunakan tag h1 utk menulis judul artikel dan tag p utk membuat isi 
+       artikel
+
+    3. Gunakan h2 kalau kita memiliki subjudul
+
+    4. Gunakan tag heading utk membuat artikel ilmiah atau laporan, judul bab 
+       menggunakan h1, subbab menggunakan h2, sub subbab menggunakan h3 dan 
+       seterusnya
+
+ >> Gunakan fitur inspect elemen yg ada di google chrome utk melihat apakah 
+    headline suatu website menggunakan tag heading atau tidak
+
+ >> Cara menggunakan inspect element : 
+
+    1. Klik kanan pada halaman
+
+    2. Cari opsi inspect element
+
+    3. Akan muncul di sebelah kanan atau bawah, seperti sidebar, kita bisa 
+       lihat elemen spesifik dgn klik logo kaca pembesar
+
+    4. Lalu arahkan ke elemen yg ingin kita tahu
